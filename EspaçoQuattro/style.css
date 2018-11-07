@@ -1,5 +1,5 @@
 *{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
 
@@ -14,35 +14,47 @@ header{
     z-index: 1;
 }
 
-header h5{
-   /* vertical-align: baseline;*/
+header img{
+    width: inherit;
 }
 
 .container-fluid{
     background-color: #A8AFBB;
 }
 
-/*texto fica invadindo o menu vertical, investigar*/
 main{
     padding: 140px 1.25%;
-}
-
-section{
     background-color: #FFF;
 }
 
 footer{
     color: #FFF;
     background-color: #2D2D2D;
-    padding: 2.5% 1.25%;
     width: 100%;
     z-index: 1;
+    padding-top: 20px;
 }
 
-.quem-somos img{
-    float: left;
-    height: 275px;
-    margin: 20px; 
+footer img{
+    width: 40%;
+    float: right;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+footer img:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#footer{
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .orange{
@@ -50,6 +62,35 @@ footer{
     display: inline;
 }
 
-.titulo{
+.title{
     text-transform: uppercase;
+}
+
+hr{
+    border: #232323 1px solid;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.testborder{
+    border: red 2px solid;
+}
+
+.text-section{
+    text-align: justify;
+    margin: 5px;
+}
+
+.photo-section{
+    margin: 20px 0;
+}
+
+.black-bar{
+    font-size: 10px;
+    text-align: right;
+    padding: 5px 1.25%;
+    margin: 0;
+    background-color: #232323;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
