@@ -85,7 +85,7 @@ main{
 
 /*Hero*/
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  url("imgs/carrossel/ambiente1.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("imgs/carrossel/ambiente1.jpeg");
     height: 45em;
     margin: 5% 0;
     background-position: center;
@@ -314,7 +314,7 @@ footer{
 }
 
 footer img{
-    width: 200px;
+    width: 150px;
     float: right;
     margin: 0 0 20px 0;
     opacity: 0.6;
