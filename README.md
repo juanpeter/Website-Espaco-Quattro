@@ -2,4 +2,4 @@
 Projeto para reformulação do site da empresa de construção Espaço Quattro!
 
 # Website-Espaco-Quattro
-Recreating the construction company Espaço Quattro!
+Recreating the website of the construction company Espaço Quattro!
