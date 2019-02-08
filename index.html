@@ -281,41 +281,31 @@
     </div>
 </div>
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-    <a class="navbar-brand">
-        <img class="logo-header" alt="Logo da Espaço Quattro" src="imgs/logoEQ.png">
-    </a> 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon justify-content-end"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link link0">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link1">Quem somos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link2">Produtos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link3">Nossos clientes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link4">Entre em contato!</a>
-            </li>
+<header>
+    <nav>
+        <img src='imgs/logoEQ.png'>
+        <i class="fas fa-bars" id="toggleNav"></i>
+        <ul id='navigator'>
+            <li><a>Home</a></li>
+            <li><a>Quem somos</a></li>
+            <li><a>Produtos</a></li>
+            <li><a>Clientes</a></li>
+            <li><a>Contato</a></li>
         </ul>
-    
-        <ul class="nav navbar-nav justify-content-end">
-            <li class="nav-item">
-            <a href="https://api.whatsapp.com/send?phone=5583996912442&text=Eu%20estou%20interessado%20nos%20serviços%20da%20Espaço%20Quattro!" target="_blank" alt="link para mensagem por Whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/espacoquattro" target="_blank"><i class="fab fa-facebook fa-4x text-center" alt="Link para o Facebook"></i></a>
-            <a href="https://www.instagram.com/espacoquattro/" target="_blank"><i class="fab fa-instagram fa-4x text-center" alt="Link para o Instagram"></i></a>
-            </li>
+        <ul id='dropnav'>
+            <hr>
+            <li><a>Home</a></li>
+            <hr>
+            <li><a>Quem somos</a></li>
+            <hr>
+            <li><a>Produtos</a></li>
+            <hr>
+            <li><a>Clientes</a></li>
+            <hr>
+            <li><a>Contato</a></li>
         </ul>
-    </div>
-</nav>
+    </nav>
+</header>
 
 <!--Hero-->
 <section class="home hero">
@@ -336,7 +326,7 @@
         <div class="col-md-6">
             <h1 class="titulo"><span class="orange">Q</span>uem somos</h1>
             <article class="text-section"> 
-            A empresa Espaço Quattro, nasceu do desejo de poder oferecer serviços diferenciados e de qualidade na área de revestimentos e construção a seco. A empresa traz uma proposta inovadora, buscando atender todas as necessidades de seus clientes, desde a elaboração do projeto, até a instalação final dos produtos.
+            A Espaço Quattro nasceu do desejo de poder oferecer serviços diferenciados e de qualidade na área de revestimentos e construção a seco. A empresa traz uma proposta inovadora, buscando atender todas as necessidades de seus clientes, desde a elaboração do projeto, até a instalação final dos produtos.
             </article>
         </div>
     </section>
@@ -475,7 +465,7 @@
                     }
                 </script>
         </div>
-        <div class="col-md-12 black-bar"><p class="copyright">©2018 ESPAÇO QUATTRO - TODOS OS DIREITOS RESERVADOS</p><a href="https://www.mirandacomunicacao.com.br/" target="_blank"><img src="imgs/logoMiranda.png" alt="Link e logomarca da Miranda Comunicações"></a></div>
+        <div class="col-md-12 black-bar"><p class="copyright">© ESPAÇO QUATTRO - TODOS OS DIREITOS RESERVADOS</p><a href="https://www.mirandacomunicacao.com.br/" target="_blank"><img src="imgs/logoMiranda.png" alt="Link e logomarca da Miranda Comunicações"></a></div>
     </footer>
     <!--Bootstrap Js CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -489,7 +479,7 @@
     <script type="text/javascript" src="plugins/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="plugins/jcarousel.responsive.js"></script>
     <!--Javascript-->
-    <script type="text/javascript" src="controller.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <!--Website made by coffee and this dude: https://github.com/juanpeter-->
 </body>
 </html>
