@@ -85,6 +85,13 @@ nav ul li{
 #dropnav{
     display: none;
 }
+#dropnav li{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#dropnav hr{
+    margin: 10px;
+}
 #toggleNav{
     display: none;
 }
@@ -105,11 +112,11 @@ nav ul li{
     }
 }
 
-
 /*Hero*/
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("imgs/hero/hero1.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("imgs/hero/hero1.JPG");
     height: 45em;
+    max-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -396,7 +403,11 @@ footer img:hover {
     height: 18em;
 }
 
+.active{
+    color: #f3b82e;
+}
 .copyright {
+    font-size: 1.5em;
     float: left;
     padding-top: 20px;
 }

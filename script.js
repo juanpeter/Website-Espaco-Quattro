@@ -1,54 +1,128 @@
-/*Scroll para as divs!*/
+/*Scroll to divs!*/
 //Make array for the Navigation elements
 const navArray= jQuery.makeArray($('#navigator li'));
 const dropArray= jQuery.makeArray($('#dropnav li'));
 
-    $('header ul li').click(function() {
-    if (this == $('navArray[0]')){
-      $('html, body').animate({
-          scrollTop: 600
-        }, 1000);
-      };
-    if (this == $('navArray[1]')){
-      $('html, body').animate({
-            scrollTop: 900
-          }, 1000);
-      };
-    });
-    // $('.link2').click(function (){
-    //   $('html, body').animate({
-    //     scrollTop: $(".area2").offset().top-85
-    //   }, 1000)
-    // }),
-    // $('.link3').click(function (){
-    //   $('html, body').animate({
-    //     scrollTop: $(".area3").offset().top-85
-    //   }, 1000)
-    // })
-    // $('.link4').click(function (){
-    //     $('html, body').animate({
-    //       scrollTop: $(".area4").offset().top-85
-    //     }, 1000)
-    // })
-    // $('.link0').click(function (){
-    //   $('html, body').animate({
-    //       scrollTop: $(".home").offset().top-85
-    //   }, 1000)
-    //   })
-    
-    // $('.link5').click(function() {
-    //   $('html, body').animate({
-    //     scrollTop: $(".area1").offset().top-85
-    //   }, 1000)
-    // }), 
+$(document).ready(function(){
+  scrollChecker();
+});
 
-/*Toggle pra classe "active" entre elementos!*/
-  $(document).on('click', '.nav-item', function() {
-      $(".nav-item").removeClass("active");
+$(window).scroll(function(){
+  scrollChecker();
+});
+//Toggle active class on elements
+    $(navArray).click(function(){
+      $(navArray).removeClass("active");
+      $(dropArray).removeClass("active");
       $(this).addClass("active");
     });
+    $(dropArray).click(function(){
+      $(navArray).removeClass("active");
+      $(dropArray).removeClass("active");
+      $(this).addClass("active");
+    });
+//Scroll animation for all nav elements
+    $(navArray[0]).click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+    });
+    $(navArray[1]).click(function() {
+      $('html, body').animate({
+        scrollTop: 600
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $(navArray[2]).click(function() {
+      $('html, body').animate({
+        scrollTop: 900
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $(navArray[3]).click(function() {
+      $('html, body').animate({
+        scrollTop: 1700
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $(navArray[4]).click(function() {
+      $('html, body').animate({
+        scrollTop: 1956
+      }, 1000);
+      $(this).addClass("active");
+    });
+//There IS a better way to do that, but I couldn't bother right now
+    $(dropArray[0]).click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $(dropArray[1]).click(function() {
+      $('html, body').animate({
+        scrollTop: 600
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $('.hero-text button').click(function() {
+      $('html, body').animate({
+        scrollTop: 600
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $(dropArray[2]).click(function() {
+      $('html, body').animate({
+        scrollTop: 900
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $(dropArray[3]).click(function() {
+      $('html, body').animate({
+        scrollTop: 1700
+      }, 1000);
+      $(this).addClass("active");
+    });
+    $(dropArray[4]).click(function() {
+      $('html, body').animate({
+        scrollTop: 1956
+      }, 1000);
+      $(this).addClass("active");
+    });
+//On scroll, active class toggles
+function scrollChecker(){
+      if ($(window).scrollTop() >= 0 && $(window).scrollTop() < 600){
+        $(navArray).removeClass('active');
+        $(dropArray).removeClass('active');
+        $(navArray[0]).addClass('active');
+        $(dropArray[0]).addClass('active');
+      };
+      if ($(window).scrollTop() >= 600 && $(window).scrollTop() < 900){
+        $(navArray).removeClass('active');
+        $(dropArray).removeClass('active');
+        $(navArray[1]).addClass('active');
+        $(dropArray[1]).addClass('active');
+      };
+      if ($(window).scrollTop() >= 900 && $(window).scrollTop() < 1700){
+        $(navArray).removeClass('active');
+        $(dropArray).removeClass('active');
+        $(navArray[2]).addClass('active');
+        $(dropArray[2]).addClass('active');
+      };
+      if ($(window).scrollTop() >= 1700 && $(window).scrollTop() < 1956){
+        $(navArray).removeClass('active');
+        $(dropArray).removeClass('active');
+        $(navArray[3]).addClass('active');
+        $(dropArray[3]).addClass('active');
+      };
+      if ($(window).scrollTop() >= 1956){
+        $(navArray).removeClass('active');
+        $(dropArray).removeClass('active');
+        $(navArray[4]).addClass('active');
+        $(dropArray[4]).addClass('active');
+      };
+};
 /*Fade in hero*/
-    $(".hero-text").fadeIn(800) .removeClass('hidden');
+    $(".hero-text").fadeIn(1800).removeClass('hidden');
 
 //Get the current year
 const d = new Date();
