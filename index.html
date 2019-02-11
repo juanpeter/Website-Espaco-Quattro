@@ -13,7 +13,7 @@
      Drywall, Drywall Campina Grande, Divisórias, Divisórias Campina Grande, Reiki, Reiki Campina Grande, pisos Campina Grande, piso vinilico, piso vinilico Campina Grande, piso laminado, piso laminado Campina Grande, sistema acústico, sistema acústico Campina Grande, construção a seco, construção a seco Campina Grande, gesso, gesso Campina Grande">
 <!--Google Fonts CDN-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <!--Bootstrap CSS CDN-->
+<!--Bootstrap CSS CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
 <!--Fontawesome CSS CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -281,69 +281,59 @@
     </div>
 </div>
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-    <a class="navbar-brand">
-        <img class="logo-header" alt="Logo da Espaço Quattro" src="imgs/logoEQ.png">
-    </a> 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon justify-content-end"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link link0">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link1">Quem somos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link2">Produtos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link3">Nossos clientes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link4">Entre em contato!</a>
-            </li>
+<header>
+    <nav>
+        <img src='imgs/logoEQ.png'>
+        <i class="fas fa-bars" id="toggleNav"></i>
+        <ul id='navigator'>
+            <li><a>Home</a></li>
+            <li><a>Quem somos</a></li>
+            <li><a>Produtos</a></li>
+            <li><a>Clientes</a></li>
+            <li><a>Contato</a></li>
         </ul>
-    
-        <ul class="nav navbar-nav justify-content-end">
-            <li class="nav-item">
-            <a href="https://api.whatsapp.com/send?phone=5583996912442&text=Eu%20estou%20interessado%20nos%20serviços%20da%20Espaço%20Quattro!" target="_blank" alt="link para mensagem por Whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/espacoquattro" target="_blank"><i class="fab fa-facebook fa-4x text-center" alt="Link para o Facebook"></i></a>
-            <a href="https://www.instagram.com/espacoquattro/" target="_blank"><i class="fab fa-instagram fa-4x text-center" alt="Link para o Instagram"></i></a>
-            </li>
+        <ul id='dropnav'>
+            <hr>
+            <li><a>Home</a></li>
+            <hr>
+            <li><a>Quem somos</a></li>
+            <hr>
+            <li><a>Produtos</a></li>
+            <hr>
+            <li><a>Clientes</a></li>
+            <hr>
+            <li><a>Contato</a></li>
         </ul>
-    </div>
-</nav>
+    </nav>
+</header>
 
 <!--Hero-->
 <section class="home hero">
     <div class="hero-text hidden">
         <h1>Somos a Espaço Qua<span class="orange">tt</span>ro</h1>
         <br>
-        <button class="rounded link5">Conheça-nos</button>
+        <button class="rounded">Conheça-nos</button>
       </div>
 </section>
 
 <div class="container-fluid">
 <main>
     
-    <section class="row quem-somos area1">
+    <section class="row quem-somos">
             <div class="col-md-6">
-                <img src="imgs/Ambiente.jpeg" alt="Imagem de quem somos!" class="img-fluid rounded shadow">
+                <img src="imgs/Ambiente.JPG" alt="Imagem de quem somos!" class="img-fluid rounded shadow">
             </div>
         <div class="col-md-6">
             <h1 class="titulo"><span class="orange">Q</span>uem somos</h1>
             <article class="text-section"> 
-            A empresa Espaço Quattro, nasceu do desejo de poder oferecer serviços diferenciados e de qualidade na área de revestimentos e construção a seco. A empresa traz uma proposta inovadora, buscando atender todas as necessidades de seus clientes, desde a elaboração do projeto, até a instalação final dos produtos.
+            A Espaço Quattro nasceu do desejo de poder oferecer serviços diferenciados e de qualidade na área de revestimentos e construção a seco. A empresa traz uma proposta inovadora, buscando atender todas as necessidades de seus clientes, desde a elaboração do projeto, até a instalação final dos produtos.
             </article>
         </div>
     </section>
 
     <hr>
 
-    <section class="area2">
+    <section>
         <div class="row text-center">
                 <h1 class="titulo col-12"><span class="orange">N</span>ossos Produtos</h1>
             </div>
@@ -411,7 +401,7 @@
             </div> 
     </section>
 <hr>
-    <section class="area3">
+    <section>
         <div class="row text-center">
             <div class="col-md-12">
                 <h1 class="titulo"><span class="orange">N</span>ossos clientes</h1>
@@ -424,12 +414,12 @@
                         <div class="jcarousel-wrapper">
                             <div class="jcarousel" data-jcarousel="true">
                                 <ul style="left: 0px; top: 0px;">
-                                    <li><img src="imgs/clientes/rochaCavalcanti.png" alt="rochaCavalcanti"></li>
-                                    <li><img src="imgs/clientes/korpus.png" alt="Academia Korpus"></li>
-                                    <li><img src="imgs/clientes/sicredi.png" alt="Sicredi"></li>
-                                    <li><img src="imgs/clientes/stefanini.jpg" alt="Stefanini"></li>
-                                    <li><img src="imgs/clientes/tess.gif" alt="Tess"></li>
-                                    <li><img src="imgs/clientes/construsat.png" alt="Construsat"></li>
+                                    <li><a href='http://gruporochacavalcante.com.br/'><img src="imgs/clientes/rochaCavalcanti.png" alt="rochaCavalcanti"></li></a>
+                                    <li><a href='https://www.academiakorpus.com.br/'><img src="imgs/clientes/korpus.png" alt="Academia Korpus"></li></a>
+                                    <li><a href='https://www.sicredi.com.br/site/'><img src="imgs/clientes/sicredi.png" alt="Sicredi"></li></a>
+                                    <li><a href='https://stefanini.com/pt-br/'><img src="imgs/clientes/stefanini.jpg" alt="Stefanini"></li></a>
+                                    <li><a href='https://www.kenner.com.br/'><img src="imgs/clientes/tess.gif" alt="Tess"></li></a>
+                                    <li><a href='http://www.construsat.com.br/'><img src="imgs/clientes/construsat.png" alt="Construsat"></li></a>
                                 </ul>
                             </div>
                             <p class="jcarousel-pagination" data-jcarouselpagination="true"><a href="#1" class="active">1</a><a href="#2">2</a><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><a href="#6">6</a></p>
@@ -443,7 +433,7 @@
     </main>
 </div>
 
-    <footer class="row area4" id="footer">
+    <footer class="row" id="footer">
 
         <address class="col-md-6">
             <p><h3>Espaço Qua<span class="orange">tt</span>ro</h3>
@@ -454,9 +444,9 @@
             <br>
             CEP: 58400-328.
             <br>
-            Telefone: (83) 3322-5038 <span class="orange">/</span> (83)99691-2442
+            Telefone: (83) 3322-5038 <span class="orange">/</span> (83) 99691-2442
             <br>
-            Email: contato@espacoquattro.com.br
+            <a href="https://www.facebook.com/espacoquattro" target="_blank">Email: contato@espacoquattro.com.br</a>
             </p>
             <h3>Entre em contato</h3>
             <a href="https://api.whatsapp.com/send?phone=5583996912442&text=Eu%20estou%20interessado%20nos%20serviços%20da%20Espaço%20Quattro!" target="_blank" alt="link para mensagem por Whatsapp"><i class="fab fa-whatsapp"></i></a>
@@ -475,7 +465,7 @@
                     }
                 </script>
         </div>
-        <div class="col-md-12 black-bar"><p class="copyright">©2018 ESPAÇO QUATTRO - TODOS OS DIREITOS RESERVADOS</p><a href="https://www.mirandacomunicacao.com.br/" target="_blank"><img src="imgs/logoMiranda.png" alt="Link e logomarca da Miranda Comunicações"></a></div>
+        <div class="col-md-12 black-bar"><p class="copyright">© ESPAÇO QUATTRO - TODOS OS DIREITOS RESERVADOS</p><a href="https://www.mirandacomunicacao.com.br/" target="_blank"><img src="imgs/logoMiranda.png" alt="Link e logomarca da Miranda Comunicações"></a></div>
     </footer>
     <!--Bootstrap Js CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -489,7 +479,7 @@
     <script type="text/javascript" src="plugins/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="plugins/jcarousel.responsive.js"></script>
     <!--Javascript-->
-    <script type="text/javascript" src="controller.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <!--Website made by coffee and this dude: https://github.com/juanpeter-->
 </body>
 </html>
