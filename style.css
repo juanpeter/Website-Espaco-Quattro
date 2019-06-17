@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     font-size: 16px;
     overflow-x: hidden;
+    background-color: #FFF;
 }
 
 hr{
@@ -20,17 +21,12 @@ i{
     font-size: 3em;
     padding-right: 0.5em;
 }
-
-main{
-    background-color: #FFF;
-    margin: 0 5% 20px 5%;
-}
-
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     color: #f3b82e;
+    transition: 0.5s;
 }
 
 a:hover{
@@ -94,6 +90,8 @@ nav ul li{
 }
 #toggleNav{
     display: none;
+    float: right;
+    margin-right: 16px;
 }
 @media screen and (max-width: 780px){
     header{
@@ -107,7 +105,6 @@ nav ul li{
     }
     #toggleNav{
         display: inline-block;
-        float: right;
         padding: 16px;
     }
 }
@@ -143,6 +140,7 @@ nav ul li{
     background-color: Transparent;
     border: 2px solid #FFF;
     color: #FFF;
+    font-weight: solid;
     height: 4em;
     width: 8em;
     cursor: pointer;
@@ -162,7 +160,7 @@ nav ul li{
     display: none;
 }
 
-.container-fluid {
+.container {
     padding-top: 2em;
 }
 
@@ -336,6 +334,27 @@ nav ul li{
     box-shadow: 0 0 2px #F0EFE7;
 }
 
+.black-bg{
+    background-color: #232323;
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.submit{
+    border: #f3b82e solid 5px;
+    background-color: #f3b82e;
+    font-size: 16px;
+    font-weight: bold;
+    color: #232323;
+    border-radius: 2px;
+    width: 120px;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: #c59a32;
+    border: #c59a32 solid 5px;
+    transition: 0.5s;
+}
 /*Footer*/
 #footer{
     margin:0;
